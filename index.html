@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur de QCM - Mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Barre latérale -->
+        <div class="sidebar">
+            <h2>Niveau</h2>
+            <select id="level-selector">
+                <option value="seconde">Seconde</option>
+                <option value="premiere">Première Spécialité</option>
+                <option value="terminale">Terminale</option>
+            </select>
+            <button id="add-question-btn">Ajouter une question</button>
+            <button id="export-pdf-btn">Exporter en PDF</button>
+        </div>
+
+        <!-- Zone principale -->
+        <div class="main-content">
+            <h1>Création de QCM - Mathématiques</h1>
+            <div id="questions-container"></div>
+        </div>
+
+        <!-- Aperçu -->
+        <div class="preview">
+            <h2>Aperçu du QCM</h2>
+            <div id="quiz-preview"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
